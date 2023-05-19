@@ -1402,6 +1402,14 @@ const legacyPackMetadataSchema = validateFormulas(unrefinedPackVersionMetadataSc
     const data = untypedData;
     (data.syncTables || []).forEach((syncTable, i) => {
         const schema = syncTable.schema;
+        const propertyNames = Object.keys(schema.properties);
+        for (const dupe of getNonUniqueElements(propertyNames)) {
+            context.addIssue({
+                code: z.ZodIssueCode.custom,
+                path: ['syncTables', i, 'properties', dupe],
+                message: `Sync table schema property names must be unique. Found duplicate name "${dupe}" in sync table ${syncTable.name}.`,
+            });
+        }
         for (const [propertyName, childSchema] of Object.entries(schema.properties)) {
             const { autocomplete } = childSchema;
             if (!autocomplete || Array.isArray(autocomplete)) {
