@@ -142,8 +142,8 @@ importers:
         specifier: 4.3.5
         version: 4.3.5
       '@types/clone':
-        specifier: 2.1.1
-        version: 2.1.1
+        specifier: 2.1.2
+        version: 2.1.2
       '@types/exorcist':
         specifier: 2.0.0
         version: 2.0.0
@@ -2086,8 +2086,8 @@ packages:
     resolution: {integrity: sha512-mEo1sAde+UCE6b2hxn332f1g1E8WfYRu6p5SvTKr2ZKC1f7gFJXk4h5PyGP9Dt6gCaG8y8XhwnXWC6Iy2cmBng==}
     dev: true
 
-  /@types/clone@2.1.1:
-    resolution: {integrity: sha512-BZIU34bSYye0j/BFcPraiDZ5ka6MJADjcDVELGf7glr9K+iE8NYVjFslJFVWzskSxkLLyCrSPScE82/UUoBSvg==}
+  /@types/clone@2.1.2:
+    resolution: {integrity: sha512-fKXTsQvII/8K7xSxQF2OEuN6Pt4/PDasws60s/qeqoIOaBX7Aoevy5CmaQ4fANbvOo04MN3kx3xUIc6ZNXsmaQ==}
     dev: true
 
   /@types/concat-stream@2.0.0:
