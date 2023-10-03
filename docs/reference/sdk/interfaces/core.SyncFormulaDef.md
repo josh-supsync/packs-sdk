@@ -178,6 +178,12 @@ CommonPackFormulaDef.parameters
 
 ___
 
+### updateOverrides
+
+• `Optional` **updateOverrides**: `Pick`<`CommonPackFormulaDef`<`ParamDefsT`\>, ``"extraOAuthScopes"``\>
+
+___
+
 ### varargParameters
 
 • `Optional` `Readonly` **varargParameters**: [`ParamDefs`](../types/core.ParamDefs.md)

@@ -1120,6 +1120,8 @@ export interface SyncFormulaDef<
     updates: Array<SyncUpdate<K, L, SchemaT>>,
     context: UpdateSyncExecutionContext,
   ): Promise<SyncUpdateResult<K, L, SchemaT>>;
+
+  updateOverrides?: Pick<CommonPackFormulaDef<ParamDefsT>, 'extraOAuthScopes'>;
 }
 
 /**

@@ -662,6 +662,7 @@ export interface SyncFormulaDef<K extends string, L extends string, ParamDefsT e
      * the new state of each object.
      */
     executeUpdate?(params: ParamValues<ParamDefsT>, updates: Array<SyncUpdate<K, L, SchemaT>>, context: UpdateSyncExecutionContext): Promise<SyncUpdateResult<K, L, SchemaT>>;
+    updateOverrides?: Pick<CommonPackFormulaDef<ParamDefsT>, 'extraOAuthScopes'>;
 }
 /**
  * The result of defining the formula that implements a sync table.
